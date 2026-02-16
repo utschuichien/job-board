@@ -1,0 +1,17 @@
+.toast-success {
+  --success-bg: #ecfdf5;
+  --success-text: #047857;
+  --success-border: #34d399;
+}
+
+.toast-error {
+  --error-bg: #fef2f2;
+  --error-text: #b91c1c;
+  --error-border: #f87171;
+}
+
+.toast-warning {
+  --normal-bg: #fffbeb;
+  --normal-text: #92400e;
+  --normal-border: #facc15;
+}
