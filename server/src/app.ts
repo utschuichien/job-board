@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(
     cors({
-        origin: ['http://localhost:5173', 'https://job-board-eta-rosy.vercel.app/'],
+        origin: ['http://localhost:5173', 'https://job-board-eta-rosy.vercel.app'],
         credentials: true,
     }),
 );
