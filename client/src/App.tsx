@@ -25,6 +25,7 @@ import LoadingSpinner from './components/shared/LoadingSpinner';
 
 function App() {
     const { checkAuth, loading } = useAuthStore();
+    console.log('🔍 API URL hiện tại là:', import.meta.env.VITE_API_BASE_URL);
 
     useEffect(() => {
         checkAuth();
