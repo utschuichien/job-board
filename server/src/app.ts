@@ -19,7 +19,12 @@ const PORT = process.env.PORT || 5000;
 // Middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors());
+app.use(
+    cors({
+        origin: ['http://localhost:5173', 'https://job-board-eta-rosy.vercel.app/'],
+        credentials: true,
+    }),
+);
 app.use(helmet());
 app.use(morgan('dev'));
 
